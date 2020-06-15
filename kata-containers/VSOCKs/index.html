@@ -38,7 +38,7 @@
     
     
       
-        <title>OCI - Person Sink</title>
+        <title>VSOCKs - Person Sink</title>
       
     
     
@@ -79,6 +79,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#1-vm" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -101,7 +105,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                OCI
+                VSOCKs
               
             </span>
           
@@ -2126,14 +2130,26 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" checked>
     
     <label class="md-nav__link" for="nav-13">
-      k8s
+      kata-containers
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-13">
-        k8s
+        kata-containers
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../OCI/" title="OCI" class="md-nav__link">
+      OCI
+    </a>
+  </li>
+
         
           
           
@@ -2151,6 +2167,42 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../k8s%2Bcontainerd%2Bkata-containers%20%E5%AE%89%E8%A3%85/" title="K8s+containerd+kata containers 安装" class="md-nav__link">
+      K8s+containerd+kata containers 安装
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E6%9E%B6%E6%9E%84/" title="架构" class="md-nav__link">
+      架构
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/" title="设计要求" class="md-nav__link">
+      设计要求
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -2159,34 +2211,84 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="OCI" class="md-nav__link md-nav__link--active">
-      OCI
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        VSOCKs
+      </label>
+    
+    <a href="./" title="VSOCKs" class="md-nav__link md-nav__link--active">
+      VSOCKs
     </a>
     
-  </li>
-
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-vm" class="md-nav__link">
+    1. VM 与 主机间的通信方案
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 系统要求
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../k8s-containerd-kata-containers%20%E5%AE%89%E8%A3%85/" title="K8s containerd kata containers 安装" class="md-nav__link">
-      K8s containerd kata containers 安装
-    </a>
-  </li>
-
+          <li class="md-nav__item">
+  <a href="#21-vmware-guest" class="md-nav__link">
+    2.1 使用 VMWare guest
+  </a>
+  
+</li>
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../kata-containers/" title="Kata containers" class="md-nav__link">
-      Kata containers
-    </a>
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-vsocks" class="md-nav__link">
+    3. 使用 VSOCKs 的优势
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 高密度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 可靠性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2205,10 +2307,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
     
     <label class="md-nav__link" for="nav-14">
-      MySQL
+      k8s
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-14">
+        k8s
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../k8s/Pod/" title="Pod" class="md-nav__link">
+      Pod
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      MySQL
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
         MySQL
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2413,13 +2551,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-17" type="checkbox" id="nav-14-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-17" type="checkbox" id="nav-15-17">
     
-    <label class="md-nav__link" for="nav-14-17">
+    <label class="md-nav__link" for="nav-15-17">
       17. MySQL复合语句
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-14-17">
+      <label class="md-nav__title" for="nav-15-17">
         17. MySQL复合语句
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2814,13 +2952,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
     
-    <label class="md-nav__link" for="nav-15">
+    <label class="md-nav__link" for="nav-16">
       MyBatis
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-15">
+      <label class="md-nav__title" for="nav-16">
         MyBatis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2874,13 +3012,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
     
-    <label class="md-nav__link" for="nav-16">
+    <label class="md-nav__link" for="nav-17">
       HTTP协议
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-16">
+      <label class="md-nav__title" for="nav-17">
         HTTP协议
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2970,13 +3108,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
     
-    <label class="md-nav__link" for="nav-17">
+    <label class="md-nav__link" for="nav-18">
       CS50
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-17">
+      <label class="md-nav__title" for="nav-18">
         CS50
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3018,13 +3156,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
     
-    <label class="md-nav__link" for="nav-18">
+    <label class="md-nav__link" for="nav-19">
       Linux网络编程
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-18">
+      <label class="md-nav__title" for="nav-19">
         Linux网络编程
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3078,13 +3216,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-20" type="checkbox" id="nav-20">
     
-    <label class="md-nav__link" for="nav-19">
+    <label class="md-nav__link" for="nav-20">
       GlusterFS
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-19">
+      <label class="md-nav__title" for="nav-20">
         GlusterFS
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3150,13 +3288,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-20" type="checkbox" id="nav-20">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-21" type="checkbox" id="nav-21">
     
-    <label class="md-nav__link" for="nav-20">
+    <label class="md-nav__link" for="nav-21">
       Git
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-20">
+      <label class="md-nav__title" for="nav-21">
         Git
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3270,13 +3408,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-21" type="checkbox" id="nav-21">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-22" type="checkbox" id="nav-22">
     
-    <label class="md-nav__link" for="nav-21">
+    <label class="md-nav__link" for="nav-22">
       Gerrit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-21">
+      <label class="md-nav__title" for="nav-22">
         Gerrit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3342,13 +3480,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-22" type="checkbox" id="nav-22">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-23" type="checkbox" id="nav-23">
     
-    <label class="md-nav__link" for="nav-22">
+    <label class="md-nav__link" for="nav-23">
       小玩具
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-22">
+      <label class="md-nav__title" for="nav-23">
         小玩具
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3378,6 +3516,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../little%20toys/Linux%20%E5%89%AA%E8%B4%B4%E6%9D%BF/" title="Linux 剪贴板" class="md-nav__link">
+      Linux 剪贴板
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3390,13 +3540,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-23" type="checkbox" id="nav-23">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24">
     
-    <label class="md-nav__link" for="nav-23">
+    <label class="md-nav__link" for="nav-24">
       Java
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-23">
+      <label class="md-nav__title" for="nav-24">
         Java
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3450,13 +3600,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-25" type="checkbox" id="nav-25">
     
-    <label class="md-nav__link" for="nav-24">
+    <label class="md-nav__link" for="nav-25">
       servlet
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-24">
+      <label class="md-nav__title" for="nav-25">
         servlet
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3618,13 +3768,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-25" type="checkbox" id="nav-25">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-26" type="checkbox" id="nav-26">
     
-    <label class="md-nav__link" for="nav-25">
+    <label class="md-nav__link" for="nav-26">
       Spring
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-25">
+      <label class="md-nav__title" for="nav-26">
         Spring
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3666,13 +3816,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-26" type="checkbox" id="nav-26">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-27" type="checkbox" id="nav-27">
     
-    <label class="md-nav__link" for="nav-26">
+    <label class="md-nav__link" for="nav-27">
       Spring Boot
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-26">
+      <label class="md-nav__title" for="nav-27">
         Spring Boot
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3762,13 +3912,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-27" type="checkbox" id="nav-27">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-28" type="checkbox" id="nav-28">
     
-    <label class="md-nav__link" for="nav-27">
+    <label class="md-nav__link" for="nav-28">
       设计模式
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-27">
+      <label class="md-nav__title" for="nav-28">
         设计模式
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3810,13 +3960,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-28" type="checkbox" id="nav-28">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-29" type="checkbox" id="nav-29">
     
-    <label class="md-nav__link" for="nav-28">
+    <label class="md-nav__link" for="nav-29">
       Datastruct
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-28">
+      <label class="md-nav__title" for="nav-29">
         Datastruct
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3870,13 +4020,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-29" type="checkbox" id="nav-29">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-30" type="checkbox" id="nav-30">
     
-    <label class="md-nav__link" for="nav-29">
+    <label class="md-nav__link" for="nav-30">
       C
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-29">
+      <label class="md-nav__title" for="nav-30">
         C
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3942,13 +4092,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-30" type="checkbox" id="nav-30">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-31" type="checkbox" id="nav-31">
     
-    <label class="md-nav__link" for="nav-30">
+    <label class="md-nav__link" for="nav-31">
       Algorithm
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-30">
+      <label class="md-nav__title" for="nav-31">
         Algorithm
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3990,13 +4140,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-31" type="checkbox" id="nav-31">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-32" type="checkbox" id="nav-32">
     
-    <label class="md-nav__link" for="nav-31">
+    <label class="md-nav__link" for="nav-32">
       奇技淫巧
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-31">
+      <label class="md-nav__title" for="nav-32">
         奇技淫巧
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4026,20 +4176,168 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-vm" class="md-nav__link">
+    1. VM 与 主机间的通信方案
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 系统要求
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-vmware-guest" class="md-nav__link">
+    2.1 使用 VMWare guest
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-vsocks" class="md-nav__link">
+    3. 使用 VSOCKs 的优势
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    3.1 高密度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 可靠性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ignorantshr/person-blog/edit/master/docs/k8s/OCI.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ignorantshr/person-blog/edit/master/docs/kata-containers/VSOCKs.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>OCI</h1>
+                  <h1>VSOCKs</h1>
                 
-                <p><code>OCI</code> （Open Container Initiative）：开放容器计划是一个开放治理结构，其明确目的是围绕容器格式和运行时创建开放行业标准。</p>
-<p><code>OCI</code> 当前包含两个规范： the Runtime Specification（<code>runtime-spec</code>）和 the Image Specification（<code>image-spec</code>）。</p>
-<p>运行时规范概述了如何运行在磁盘上解压缩的<code>filesystem bundle</code>。</p>
-<p>在较高级别上，OCI 实现（例如 runc、kata-containers）将下载 OCI 映像，然后将该映像解压缩为 OCI 运行时<code>filesystem bundle</code>，然后被 OCI Runtime 运行。</p>
+                <h2 id="1-vm">1. VM 与 主机间的通信方案<a class="headerlink" href="#1-vm" title="Permanent link">&para;</a></h2>
+<p>虚拟机中的进程与主机中的进程通信有两种不同的方式。第一种是通过使用串行端口，虚拟机中的进程可以从串行端口设备 读/写 数据，主机中的进程可以从 Unix 套接字 读/写 数据。</p>
+<p>大多数 GNU/Linux 发行版都支持串行端口，使其成为最可移植的解决方案。但是，串行链接一次只能对一个进程进行读/写访问。要解决此限制，必须对资源(串口和Unix套接字)进行多路复用。在 Kata container 中，这些资源通过使用 <a href="https://github.com/kata-containers/proxy"><code>kata-proxy</code></a>  和  <a href="https://github.com/hashicorp/yamux">Yamux</a> 进行多路复用，下面的关系图显示了如何实现它。</p>
+<div class="codehilite"><pre><span></span><code><span class="err">.----------------------.</span>
+<span class="err">| .------------------. |</span>
+<span class="err">| | .-----.  .-----. | |</span>
+<span class="err">| | |cont1|  |cont2| | |</span>
+<span class="err">| | `-----&#39;  `-----&#39; | |</span>
+<span class="err">| |       \   /      | |</span>
+<span class="err">| |    .---------.   | |</span>
+<span class="err">| |    |  agent  |   | |</span>
+<span class="err">| |    `---------&#39;   | |</span>
+<span class="err">| |         |        | |</span>
+<span class="err">| |    .-----------. | |</span>
+<span class="err">| |POD |serial port| | |</span>
+<span class="err">| `----|-----------|-&#39; |</span>
+<span class="err">|      |  socket   |   |</span>
+<span class="err">|      `-----------&#39;   |</span>
+<span class="err">|           |          |</span>
+<span class="err">|       .-------.      |</span>
+<span class="err">|       | proxy |      |</span>
+<span class="err">|       `-------&#39;      |</span>
+<span class="err">|           |          |</span>
+<span class="err">|  .------./ \.------. |</span>
+<span class="err">|  | shim |   | shim | |</span>
+<span class="err">|  `------&#39;   `------&#39; |</span>
+<span class="err">| Host                 |</span>
+<span class="err">`----------------------&#39;</span>
+</code></pre></div>
+
+
+<p>可以使用 <code>ss | grep kata</code>命令查看。</p>
+<p><br/></p>
+<p>一个更新更简单的方法是 <a href="https://wiki.qemu.org/Features/VirtioVsock">VSOCKs</a>，它可以接受来自多个客户端的连接，并且不需要多路复用器（kata-proxy和Yamux）。VSOCK 通信图：</p>
+<div class="codehilite"><pre><span></span><code><span class="err">.----------------------.</span>
+<span class="err">| .------------------. |</span>
+<span class="err">| | .-----.  .-----. | |</span>
+<span class="err">| | |cont1|  |cont2| | |</span>
+<span class="err">| | `-----&#39;  `-----&#39; | |</span>
+<span class="err">| |       |   |      | |</span>
+<span class="err">| |    .---------.   | |</span>
+<span class="err">| |    |  agent  |   | |</span>
+<span class="err">| |    `---------&#39;   | |</span>
+<span class="err">| |       |   |      | |</span>
+<span class="err">| | POD .-------.    | |</span>
+<span class="err">| `-----| vsock |----&#39; |</span>
+<span class="err">|       `-------&#39;      |</span>
+<span class="err">|         |   |        |</span>
+<span class="err">|  .------.   .------. |</span>
+<span class="err">|  | shim |   | shim | |</span>
+<span class="err">|  `------&#39;   `------&#39; |</span>
+<span class="err">| Host                 |</span>
+<span class="err">`----------------------&#39;</span>
+</code></pre></div>
+
+
+<h2 id="2">2. 系统要求<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>kernel 版本 &gt;=  v4.8，并且必须载入  <code>vhost_vsock</code> 模块或者内置  <code>vhost_vsock</code> 模块(<code>CONFIG_VHOST_VSOCK=y</code>)</p>
+<div class="codehilite"><pre><span></span><code>sudo modprobe -i vhost_vsock
+</code></pre></div>
+
+
+<p>Kata Containers &gt;= v1.2.0，并且在  <code>/usr/share/defaults/kata-containers/configuration.toml</code>  中须配置 <code>use_vsock=true</code>。</p>
+<h3 id="21-vmware-guest">2.1 使用 VMWare guest<a class="headerlink" href="#21-vmware-guest" title="Permanent link">&para;</a></h3>
+<p>要在 VMWare guest 环境中使用带有 VSOCKs 的 Kata Containers，首先要停止 VMWare-tools 服务并卸载 VMWare Linux 内核模块。</p>
+<div class="codehilite"><pre><span></span><code>sudo systemctl stop vmware-tools
+sudo modprobe -r vmw_vsock_vmci_transport
+sudo modprobe -i vhost_vsock
+</code></pre></div>
+
+
+<h2 id="3-vsocks">3. 使用 VSOCKs 的优势<a class="headerlink" href="#3-vsocks" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 高密度<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>使用 <code>kata-proxy</code> 对虚拟机和主机之间的连接进行多路复用时，每个 POD 使用 4.5MB 内存。当我们谈论密度时，每千字节很重要，这可能是运行另一个POD与否之间的决定性因素。当 pod 多起来之后，这将占用很多资源。</p>
+<h3 id="32">3.2 可靠性<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p><code>kata-proxy</code> 负责解决虚拟机与主机进程之间的多路复用，如果它死掉了，那么所有的连接都会断开。由于通过 VSOCK 进行的通信是直接的，因此失去与容器通信的唯一方法是 VM 本身或 <a href="https://github.com/kata-containers/shim">shim</a> 死亡，如果发生这种情况，则容器将自动删除。</p>
                 
                   
                 
@@ -4060,7 +4358,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../CRI/" title="CRI" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/" title="设计要求" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -4069,19 +4367,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                CRI
+                设计要求
               </span>
             </div>
           </a>
         
         
-          <a href="../k8s-containerd-kata-containers%20%E5%AE%89%E8%A3%85/" title="K8s containerd kata containers 安装" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../k8s/Pod/" title="Pod" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                K8s containerd kata containers 安装
+                Pod
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -38,7 +38,7 @@
     
     
       
-        <title>Kata containers - Person Sink</title>
+        <title>Pod - Person Sink</title>
       
     
     
@@ -79,7 +79,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#1-kata-containers" tabindex="1" class="md-skip">
+      <a href="#1" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -105,7 +105,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Kata containers
+                Pod
               
             </span>
           
@@ -2122,19 +2122,17 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
     <label class="md-nav__link" for="nav-13">
-      k8s
+      kata-containers
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-13">
-        k8s
+        kata-containers
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -2145,19 +2143,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../CRI/" title="CRI" class="md-nav__link">
-      CRI
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../OCI/" title="OCI" class="md-nav__link">
+    <a href="../../kata-containers/OCI/" title="OCI" class="md-nav__link">
       OCI
     </a>
   </li>
@@ -2169,11 +2155,85 @@
 
 
   <li class="md-nav__item">
-    <a href="../k8s-containerd-kata-containers%20%E5%AE%89%E8%A3%85/" title="K8s containerd kata containers 安装" class="md-nav__link">
-      K8s containerd kata containers 安装
+    <a href="../../kata-containers/CRI/" title="CRI" class="md-nav__link">
+      CRI
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../kata-containers/k8s%2Bcontainerd%2Bkata-containers%20%E5%AE%89%E8%A3%85/" title="K8s+containerd+kata containers 安装" class="md-nav__link">
+      K8s+containerd+kata containers 安装
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../kata-containers/%E6%9E%B6%E6%9E%84/" title="架构" class="md-nav__link">
+      架构
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../kata-containers/%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82/" title="设计要求" class="md-nav__link">
+      设计要求
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../kata-containers/VSOCKs/" title="VSOCKs" class="md-nav__link">
+      VSOCKs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" checked>
+    
+    <label class="md-nav__link" for="nav-14">
+      k8s
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        k8s
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -2188,11 +2248,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Kata containers
+        Pod
       </label>
     
-    <a href="./" title="Kata containers" class="md-nav__link md-nav__link--active">
-      Kata containers
+    <a href="./" title="Pod" class="md-nav__link md-nav__link--active">
+      Pod
     </a>
     
       
@@ -2204,212 +2264,57 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-kata-containers" class="md-nav__link">
-    1.  Kata Containers 概述
+  <a href="#1" class="md-nav__link">
+    1. 概述
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 控制器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-pod-template" class="md-nav__link">
+    1.2 Pod Template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 虚拟化
+    2. 容器的检查
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 重启策略
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 初始化容器
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    2.1 将容器概念映射到虚拟机技术
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-hypervisor-vmm" class="md-nav__link">
-    2.2 对于 Hypervisor 和 VMM 的支持
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#221-qemukvm" class="md-nav__link">
-    2.2.1 QEMU/KVM
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#2211-hotplug" class="md-nav__link">
-    2.2.1.1 Hotplug 设备
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#222-firecrackerkvm" class="md-nav__link">
-    2.2.2 Firecracker/KVM
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#223-cloud-hypervisorkvm" class="md-nav__link">
-    2.2.3 Cloud Hypervisor/KVM
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-guest" class="md-nav__link">
-    3. Guest 内容
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-guest-kernel" class="md-nav__link">
-    3.1 Guest kernel
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-guest-image" class="md-nav__link">
-    3.2 Guest image
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#321-root-filesystem-image" class="md-nav__link">
-    3.2.1 Root filesystem image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#322-initrd-image" class="md-nav__link">
-    3.2.2 Initrd image
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-agent" class="md-nav__link">
-    4. Agent
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-runtime" class="md-nav__link">
-    5. Runtime
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-configuration" class="md-nav__link">
-    5.1 Configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-coi" class="md-nav__link">
-    5.2 重要的 COI 命令
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-proxy" class="md-nav__link">
-    6. Proxy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-shim" class="md-nav__link">
-    7. Shim
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-networking" class="md-nav__link">
-    8. Networking
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#81-cnm-runtime" class="md-nav__link">
-    8.1 使用 CNM 设置 runtime 网络
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-storage" class="md-nav__link">
-    9. Storage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-kubernetes" class="md-nav__link">
-    10. Kubernetes 支持
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#101" class="md-nav__link">
-    10.1 问题描述
+  <a href="#41-resources" class="md-nav__link">
+    4.1 Resources
   </a>
   
 </li>
@@ -2442,13 +2347,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
     
-    <label class="md-nav__link" for="nav-14">
+    <label class="md-nav__link" for="nav-15">
       MySQL
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-14">
+      <label class="md-nav__title" for="nav-15">
         MySQL
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2653,13 +2558,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14-17" type="checkbox" id="nav-14-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15-17" type="checkbox" id="nav-15-17">
     
-    <label class="md-nav__link" for="nav-14-17">
+    <label class="md-nav__link" for="nav-15-17">
       17. MySQL复合语句
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-14-17">
+      <label class="md-nav__title" for="nav-15-17">
         17. MySQL复合语句
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3054,13 +2959,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
     
-    <label class="md-nav__link" for="nav-15">
+    <label class="md-nav__link" for="nav-16">
       MyBatis
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-15">
+      <label class="md-nav__title" for="nav-16">
         MyBatis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3114,13 +3019,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
     
-    <label class="md-nav__link" for="nav-16">
+    <label class="md-nav__link" for="nav-17">
       HTTP协议
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-16">
+      <label class="md-nav__title" for="nav-17">
         HTTP协议
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3210,13 +3115,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-17" type="checkbox" id="nav-17">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
     
-    <label class="md-nav__link" for="nav-17">
+    <label class="md-nav__link" for="nav-18">
       CS50
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-17">
+      <label class="md-nav__title" for="nav-18">
         CS50
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3258,13 +3163,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-18" type="checkbox" id="nav-18">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
     
-    <label class="md-nav__link" for="nav-18">
+    <label class="md-nav__link" for="nav-19">
       Linux网络编程
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-18">
+      <label class="md-nav__title" for="nav-19">
         Linux网络编程
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3318,13 +3223,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-19" type="checkbox" id="nav-19">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-20" type="checkbox" id="nav-20">
     
-    <label class="md-nav__link" for="nav-19">
+    <label class="md-nav__link" for="nav-20">
       GlusterFS
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-19">
+      <label class="md-nav__title" for="nav-20">
         GlusterFS
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3390,13 +3295,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-20" type="checkbox" id="nav-20">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-21" type="checkbox" id="nav-21">
     
-    <label class="md-nav__link" for="nav-20">
+    <label class="md-nav__link" for="nav-21">
       Git
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-20">
+      <label class="md-nav__title" for="nav-21">
         Git
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3510,13 +3415,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-21" type="checkbox" id="nav-21">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-22" type="checkbox" id="nav-22">
     
-    <label class="md-nav__link" for="nav-21">
+    <label class="md-nav__link" for="nav-22">
       Gerrit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-21">
+      <label class="md-nav__title" for="nav-22">
         Gerrit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3582,13 +3487,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-22" type="checkbox" id="nav-22">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-23" type="checkbox" id="nav-23">
     
-    <label class="md-nav__link" for="nav-22">
+    <label class="md-nav__link" for="nav-23">
       小玩具
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-22">
+      <label class="md-nav__title" for="nav-23">
         小玩具
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3618,6 +3523,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../little%20toys/Linux%20%E5%89%AA%E8%B4%B4%E6%9D%BF/" title="Linux 剪贴板" class="md-nav__link">
+      Linux 剪贴板
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -3630,13 +3547,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-23" type="checkbox" id="nav-23">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24">
     
-    <label class="md-nav__link" for="nav-23">
+    <label class="md-nav__link" for="nav-24">
       Java
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-23">
+      <label class="md-nav__title" for="nav-24">
         Java
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3690,13 +3607,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-25" type="checkbox" id="nav-25">
     
-    <label class="md-nav__link" for="nav-24">
+    <label class="md-nav__link" for="nav-25">
       servlet
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-24">
+      <label class="md-nav__title" for="nav-25">
         servlet
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3858,13 +3775,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-25" type="checkbox" id="nav-25">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-26" type="checkbox" id="nav-26">
     
-    <label class="md-nav__link" for="nav-25">
+    <label class="md-nav__link" for="nav-26">
       Spring
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-25">
+      <label class="md-nav__title" for="nav-26">
         Spring
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -3906,13 +3823,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-26" type="checkbox" id="nav-26">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-27" type="checkbox" id="nav-27">
     
-    <label class="md-nav__link" for="nav-26">
+    <label class="md-nav__link" for="nav-27">
       Spring Boot
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-26">
+      <label class="md-nav__title" for="nav-27">
         Spring Boot
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4002,13 +3919,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-27" type="checkbox" id="nav-27">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-28" type="checkbox" id="nav-28">
     
-    <label class="md-nav__link" for="nav-27">
+    <label class="md-nav__link" for="nav-28">
       设计模式
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-27">
+      <label class="md-nav__title" for="nav-28">
         设计模式
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4050,13 +3967,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-28" type="checkbox" id="nav-28">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-29" type="checkbox" id="nav-29">
     
-    <label class="md-nav__link" for="nav-28">
+    <label class="md-nav__link" for="nav-29">
       Datastruct
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-28">
+      <label class="md-nav__title" for="nav-29">
         Datastruct
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4110,13 +4027,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-29" type="checkbox" id="nav-29">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-30" type="checkbox" id="nav-30">
     
-    <label class="md-nav__link" for="nav-29">
+    <label class="md-nav__link" for="nav-30">
       C
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-29">
+      <label class="md-nav__title" for="nav-30">
         C
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4182,13 +4099,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-30" type="checkbox" id="nav-30">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-31" type="checkbox" id="nav-31">
     
-    <label class="md-nav__link" for="nav-30">
+    <label class="md-nav__link" for="nav-31">
       Algorithm
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-30">
+      <label class="md-nav__title" for="nav-31">
         Algorithm
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4230,13 +4147,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-31" type="checkbox" id="nav-31">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-32" type="checkbox" id="nav-32">
     
-    <label class="md-nav__link" for="nav-31">
+    <label class="md-nav__link" for="nav-32">
       奇技淫巧
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-31">
+      <label class="md-nav__title" for="nav-32">
         奇技淫巧
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -4278,212 +4195,57 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-kata-containers" class="md-nav__link">
-    1.  Kata Containers 概述
+  <a href="#1" class="md-nav__link">
+    1. 概述
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1 控制器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-pod-template" class="md-nav__link">
+    1.2 Pod Template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
-    2. 虚拟化
+    2. 容器的检查
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 重启策略
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 初始化容器
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    2.1 将容器概念映射到虚拟机技术
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-hypervisor-vmm" class="md-nav__link">
-    2.2 对于 Hypervisor 和 VMM 的支持
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#221-qemukvm" class="md-nav__link">
-    2.2.1 QEMU/KVM
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#2211-hotplug" class="md-nav__link">
-    2.2.1.1 Hotplug 设备
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#222-firecrackerkvm" class="md-nav__link">
-    2.2.2 Firecracker/KVM
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#223-cloud-hypervisorkvm" class="md-nav__link">
-    2.2.3 Cloud Hypervisor/KVM
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-guest" class="md-nav__link">
-    3. Guest 内容
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-guest-kernel" class="md-nav__link">
-    3.1 Guest kernel
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-guest-image" class="md-nav__link">
-    3.2 Guest image
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#321-root-filesystem-image" class="md-nav__link">
-    3.2.1 Root filesystem image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#322-initrd-image" class="md-nav__link">
-    3.2.2 Initrd image
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-agent" class="md-nav__link">
-    4. Agent
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-runtime" class="md-nav__link">
-    5. Runtime
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-configuration" class="md-nav__link">
-    5.1 Configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-coi" class="md-nav__link">
-    5.2 重要的 COI 命令
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-proxy" class="md-nav__link">
-    6. Proxy
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-shim" class="md-nav__link">
-    7. Shim
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-networking" class="md-nav__link">
-    8. Networking
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#81-cnm-runtime" class="md-nav__link">
-    8.1 使用 CNM 设置 runtime 网络
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-storage" class="md-nav__link">
-    9. Storage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-kubernetes" class="md-nav__link">
-    10. Kubernetes 支持
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#101" class="md-nav__link">
-    10.1 问题描述
+  <a href="#41-resources" class="md-nav__link">
+    4.1 Resources
   </a>
   
 </li>
@@ -4509,172 +4271,75 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ignorantshr/person-blog/edit/master/docs/k8s/kata-containers.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ignorantshr/person-blog/edit/master/docs/k8s/Pod.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Kata containers</h1>
+                  <h1>Pod</h1>
                 
-                <h2 id="1-kata-containers">1.  Kata Containers 概述<a class="headerlink" href="#1-kata-containers" title="Permanent link">&para;</a></h2>
-<p>Kata Containers 主要提供 container runtime 和 CRI shim。在它们背后还有一个友好的 CRI API。</p>
-<p><a href="https://github.com/kata-containers/runtime">Kata Containers runtime (<code>kata-runtime</code>)</a> 兼容 <a href="https://github.com/opencontainers">OCI</a> <a href="https://github.com/opencontainers/runtime-spec">runtime specification</a>，它是与 runc 同级别的东西。所以可以用于替换 docker 的 默认运行时 runc。</p>
-<p>CRI shim 则通过 <a href="https://github.com/kubernetes-incubator/cri-o">CRI-O*</a> and <a href="https://github.com/containerd/cri">Containerd CRI Plugin*</a> 实现支持  <a href="https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md">Kubernetes* Container Runtime Interface (CRI)</a>。</p>
-<p><img alt="" src="../img/docker-kata.png" /></p>
-<p>k8s 与 CRI、OCI 的关系：</p>
-<p><img alt="" src="../img/k8s-CRI-OCI.png" /></p>
-<p><a href="https://github.com/kata-containers/runtime/tree/master/containerd-shim-v2"><code>containerd-shim-kata-v2</code> (shown as <code>shimv2</code> from this point onwards)</a> 是另一个容器切入点，实现了 kata 的  <a href="https://github.com/containerd/containerd/tree/master/runtime/v2">Containerd Runtime V2 (Shim API)</a> </p>
-<p><img alt="" src="../img/shimv2.svg" /></p>
-<p>容器进程由<a href="https://github.com/kata-containers/agent">agent</a>产生，<code>agent</code> 作为守护进程运行在虚拟机内部。<code>kata-agent</code>使用<code>VIRTIO 串口</code>或 <code>VSOCK 接口</code>（使用的是 qemu 在主机上暴露出来的 socket 文件）在虚拟机中运行一个 gRPC 服务。<code>kata-runtime</code>使用 gRPC 协议与 agent 通信。该协议还用于在容器和管理引擎之间传输 I/O 流（stdout, stderr, stdin）。</p>
-<p>对于任何一个容器，其<code>初始进程、以及所有的在容器内部执行的命令、和相关的 I/O 流</code>，都需要通过 VIRTIO 串口或 VSOCK 接口。在使用 VIRTIO 串口时，每个虚拟机都会启动一个 <a href="https://github.com/kata-containers/proxy">Kata Containers proxy (<code>kata-proxy</code>)</a> 去处理多路复用和解多路复用 这些命令和流（使用 shimv2 的情况除外）。</p>
-<p>在主机上面，每个容器进程的移除都通过一个位于 container 堆栈高层的 <code>reaper</code> 进行处理。在 Docker 或 containerd 中是 <code>containerd-shim</code>。对于 Kata Containers 来说，进程是运行在虚拟机内部的，所以 reaper 不能监视、控制或回收它们。旧版解决方案：<code>kata-runtime</code>通过在 reaper 与 <code>kata-proxy</code> 之间创建一个额外的<a href="https://github.com/kata-containers/shim">shim process (<code>kata-shim</code>)</a>进程来解决该问题。一个<code>kata-shim</code>实例既可以转发 信号和<code>stdin</code>流 到虚拟机中的容器进程，又可以通过 reaper 传递 <code>stdout</code>和<code>stderr</code>流 的堆栈到 CRI shim 或 Docker 。<code>kata-runtime</code>为 每个容器和每条接收到的要运行的 OCI 命令 创建一个<code>kata-shim</code>守护进程。</p>
-<p>从 Kata Containers 1.5 开始，<code>shimv2</code>整合了 <code>reaper</code>、<code>kata-runtime</code>、<code>kata-shim</code>及<code>kata-proxy</code> 的功能。所以使用<code>shimv2</code>时这些进程就不会再出现了。</p>
-<h2 id="2">2. 虚拟化<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p>Kata容器在传统名称空间容器提供的隔离之上创建了第二层隔离。硬件虚拟化接口是此附加层的基础。Kata 将启动一个轻量级虚拟机，并使用 guest 的 Linux 内核创建一个容器工作负载，或者在多容器 pod 的情况下创建工作负载。</p>
-<p>本文档描述了 Kata Containers 如何将容器技术映射到虚拟机技术，以及如何在 Kata 支持的多个 hypervisors 和虚拟机监视器中实现这一点。</p>
-<h3 id="21">2.1 将容器概念映射到虚拟机技术<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
-<p>根据 kubernetes 的 CRI API， Kata Containers 必须提供一些结构体，然后讲这些结构体进一步映射到虚拟机接口所需的设备：</p>
-<p><img alt="" src="../img/construct-to-vm-concept.png" /></p>
-<p>最终，这些概念映射到特定的准虚拟化设备或虚拟化技术：</p>
-<p><img alt="" src="../img/vm-concept-to-tech.png" /></p>
-<p>每个 Hypervisor 或 VMM 在如何或是否处理其中的每一个方面各不相同。</p>
-<h3 id="22-hypervisor-vmm">2.2 对于 Hypervisor 和 VMM 的支持<a class="headerlink" href="#22-hypervisor-vmm" title="Permanent link">&para;</a></h3>
-<p>Kata Containers 支持多种 虚拟机监视器（VMM）和 hypervisor：</p>
+                <h2 id="1">1. 概述<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 控制器<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<p>用户应该始终使用控制器来创建 Pod，控制器(（例如 Deployment、StatefulSet、DaemonSet 等)可以提供如下特性：</p>
 <ul>
-<li><a href="https://projectacrn.org/">ACRN hypervisor</a></li>
-<li><a href="https://github.com/cloud-hypervisor/cloud-hypervisor">Cloud Hypervisor</a>/<a href="https://www.linux-kvm.org/page/Main_Page">KVM</a></li>
-<li><a href="https://github.com/firecracker-microvm/firecracker">Firecracker</a>/KVM</li>
-<li><a href="http://www.qemu-project.org/">QEMU</a>/KVM</li>
+<li>水平扩展（运行 Pod 的多个副本）</li>
+<li>rollout（版本更新）</li>
+<li>self-healing（故障恢复）</li>
 </ul>
-<h4 id="221-qemukvm">2.2.1 QEMU/KVM<a class="headerlink" href="#221-qemukvm" title="Permanent link">&para;</a></h4>
-<p>使用 QEMU 可以与 kubernetes 完全兼容。</p>
-<p>根据主机架构， Kata Containers 支持多种虚拟机类型，例如 <code>pc</code> and <code>q35</code> on x86 systems, <code>virt</code> on ARM systems and <code>pseries</code> on IBM Power systems。默认的类型是 <code>pc</code>。可以通过编写运行时配置文件（ <a href="https://github.com/kata-containers/documentation/blob/master/design/architecture.md/#configuration"><code>configuration</code></a> ）更改虚拟机类型及它的加速器（ <a href="https://github.com/kata-containers/documentation/blob/master/design/virtualization.md#machine-accelerators"><code>Machine accelerators</code></a> ）。</p>
-<p>使用的设备及特性：</p>
+<h3 id="12-pod-template">1.2 Pod Template<a class="headerlink" href="#12-pod-template" title="Permanent link">&para;</a></h3>
+<p>Pod Template 是关于 Pod 的定义，但是被包含在其他的 Kubernetes 对象中（例如 Deployment、StatefulSet、DaemonSet 等控制器）。</p>
+<h2 id="2">2. 容器的检查<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>Probe 是指 kubelet 周期性地检查容器的状况。有三种类型的 Probe：</p>
 <ul>
-<li>virtio VSOCK or virtio serial</li>
-<li>virtio block or virtio SCSI</li>
-<li>virtio net</li>
-<li>virtio fs or virtio 9p (recommend: virtio fs)</li>
-<li>VFIO</li>
-<li>hotplug</li>
-<li>machine accelerators</li>
+<li><strong>ExecAction：</strong> 在容器内执行一个指定的命令。如果该命令的退出状态码为 0，则成功</li>
+<li><strong>TCPSocketAction：</strong> 探测容器的指定 TCP 端口，如果该端口处于 open 状态，则成功</li>
+<li><strong>HTTPGetAction：</strong> 探测容器指定端口/路径上的 HTTP Get 请求，如果 HTTP 响应状态码在 200 到 400（不包含400）之间，则成功</li>
 </ul>
-<p>Kata container 中使用 machine accelerators 和 hotplug 来管理资源约束、改进引导时间和减少内存占用。</p>
-<h5 id="2211-hotplug">2.2.1.1 Hotplug 设备<a class="headerlink" href="#2211-hotplug" title="Permanent link">&para;</a></h5>
-<p>Kata Containers 使用最少的资源启动虚拟机，随着容器启动的进行，设备会热插拔到VM。支持的热插拔设备有以下几种：</p>
+<p>Probe 有三种可能的结果：</p>
 <ul>
-<li>Virtio block</li>
-<li>Virtio SCSI</li>
-<li>VFIO</li>
-<li>CPU</li>
+<li><strong>Success：</strong> 容器通过检测</li>
+<li><strong>Failure：</strong> 容器未通过检测</li>
+<li><strong>Unknown：</strong> 检测执行失败，此时 kubelet 不做任何处理</li>
 </ul>
-<h4 id="222-firecrackerkvm">2.2.2 Firecracker/KVM<a class="headerlink" href="#222-firecrackerkvm" title="Permanent link">&para;</a></h4>
-<p>有一个非常有限的设备模型，提供更少的占用。所以只支持部分 CRI API 。Firecracker 的缺点：</p>
+<p>Kubelet 可以在两种情况下对运行中的容器执行 Probe：</p>
 <ul>
-<li>不支持文件系统共享，所以只支持块存储设备；</li>
-<li>不支持设备热插拔；</li>
-<li>不支持 VFIO；</li>
-<li>不支持在启动后更新容器资源；</li>
-<li>不支持设备直连。</li>
+<li><strong>就绪检查 readinessProbe：</strong> 确定容器是否已经就绪并接收服务请求。如果就绪检查失败，kubernetes 将该 Pod 的 IP 地址从所有匹配的 Service 的资源池中移除掉。</li>
+<li><strong>健康检查 livenessProbe：</strong> 确定容器是否正在运行。如果健康检查失败，kubelete 将结束该容器，并根据 restart policy（重启策略）确定是否重启该容器。</li>
 </ul>
-<p>使用的设备：</p>
+<h2 id="3">3. 重启策略<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>定义 Pod 或工作负载时，可以指定 restartPolicy，可选的值有：</p>
 <ul>
-<li>virtio VSOCK</li>
-<li>virtio block</li>
-<li>virtio net</li>
+<li>Always （默认值）</li>
+<li>OnFailure</li>
+<li>Never</li>
 </ul>
-<h4 id="223-cloud-hypervisorkvm">2.2.3 Cloud Hypervisor/KVM<a class="headerlink" href="#223-cloud-hypervisorkvm" title="Permanent link">&para;</a></h4>
-<p>与 Firecracker 类似，但与其相比 Cloud Hypervisor 配置提供更好的兼容性，但代价是暴露更多设备：文件系统共享和直接设备分配。</p>
-<p>截至 Kata Containers 1.10：</p>
+<p>restartPolicy 将作用于 Pod 中的所有容器。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>控制器 Deployment/StatefulSet/DaemonSet 中，只支持 Always 这一个选项，不支持 OnFailure 和 Never 选项。</p>
+</div>
+<h2 id="4">4. 初始化容器<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>Pod 可以包含多个工作容器和多个初始化容器，初始化容器在工作容器启动之前执行。</p>
+<p>工作容器和初始化容器的区别：</p>
 <ul>
-<li>不支持设备热插拔；</li>
-<li>不支持在启动后更新容器资源；</li>
-<li>不支持利用基于 块 的卷；</li>
-<li>不支持直接设备分配。</li>
+<li>初始化容器总是运行并自动结束</li>
+<li>kubelet 按顺序执行 Pod 中的初始化容器，前一个初始化容器成功结束后，下一个初始化容器才开始运行。所有的初始化容器成功执行后，才开始启动工作容器</li>
+<li>如果 Pod 的任意一个初始化容器执行失败，kubernetes 将反复重启该 Pod，直到初始化容器全部成功（除非 Pod 的 restartPolicy 被设定为 Never），因此初始化容器中的代码必须是 <a href="https://kuboard.cn/glossary/idempotent.html"><strong>幂等</strong></a> 的。</li>
+<li>初始化容器的 Resource request / limits 处理不同，请参考 <a href="#resources">Resources</a></li>
+<li>初始化容器不支持 <a href="https://kuboard.cn/learning/k8s-intermediate/workload/pod-lifecycle.html#container-probes">就绪检查 readiness probe</a>，因为初始化容器必须在 Pod ready 之前运行并结束</li>
+<li>初始化容器的端口是不能够通过 kubernetes Service 访问的</li>
+<li>Pod 在初始化过程中处于 Pending 状态</li>
+<li>改变工作容器的镜像，将只重启该工作容器，而不重启 Pod</li>
 </ul>
-<p>使用的设备：</p>
+<h3 id="41-resources">4.1 Resources<a class="headerlink" href="#41-resources" title="Permanent link">&para;</a></h3>
+<p>在确定初始化容器的执行顺序以后，以下 resource 使用规则将适用：</p>
 <ul>
-<li>virtio VSOCK</li>
-<li>virtio block</li>
-<li>virtio net</li>
-<li>virtio fs</li>
+<li>所有初始化容器中最高的 resource request/limit 是最终生效的 request/limit</li>
+<li>对于 Pod 来说，最终生效的 resource request/limit 是如下几个当中较高的一个： <ul>
+<li>所有工作容器某一个 resource request/limit 的和</li>
+<li>最终生效的初始化容器的 request/limit 的和</li>
 </ul>
-<h2 id="3-guest">3. Guest 内容<a class="headerlink" href="#3-guest" title="Permanent link">&para;</a></h2>
-<p>hypervisor 将启动一个虚拟机，该虚拟机包括一个最小的 guest kernel 和 一个 guest image。</p>
-<h3 id="31-guest-kernel">3.1 Guest kernel<a class="headerlink" href="#31-guest-kernel" title="Permanent link">&para;</a></h3>
-<p>kernel 被传送给  hypervisor 并用于启动虚拟机。 Kata Containers 基于最新的 Linux 内核对其进行高度优化，只提供容器要求的服务。</p>
-<h3 id="32-guest-image">3.2 Guest image<a class="headerlink" href="#32-guest-image" title="Permanent link">&para;</a></h3>
-<p>Kata Containers 支持基于 initrd 和 rootfs 的最小客户映像。</p>
-<h4 id="321-root-filesystem-image">3.2.1 Root filesystem image<a class="headerlink" href="#321-root-filesystem-image" title="Permanent link">&para;</a></h4>
-<p>默认的 root filesystem image (有时称为<code>mini O/S</code>)是一个基于 <a href="https://clearlinux.org/">Clear Linux</a> 的高度优化的容器引导系统。它提供了一个极小的环境，并有一个高度优化的引导路径。</p>
-<p>在 mini O/S 上下文中运行的唯一服务是 init 守护进程(systemd)和 <a href="#agent">Agent</a>。用户希望运行的实际工作负载（workload）是使用 libcontainer 创建的，创建容器的方式与 runc 相同。</p>
-<p>例如，当运行 <code>docker run -ti ubuntu date</code> 时：</p>
-<ul>
-<li>hypervisor 使用 kernel 启动 mini O/S image。</li>
-<li>运行在 mini-OS 上下文中的 <code>systemd</code>会在同一个上下文中启动  <code>kata-agent</code> 。</li>
-<li>agent 会创建一个新的封闭的上下文运行指定的命令（date）。</li>
-<li>agent 首先将 root filesystem 设置为预期的 Ubuntu* root filesystem，然后在新的上下文执行命令。</li>
+</li>
+<li>Kubelet 依据最终生效的 request/limit 执行调度，这意味着，在执行初始化容器时，就已经为 Pod 申请了其资源需求</li>
 </ul>
-<h4 id="322-initrd-image">3.2.2 Initrd image<a class="headerlink" href="#322-initrd-image" title="Permanent link">&para;</a></h4>
-<p>压缩的 <code>cpio(1)</code> 文件，从 rootfs （被载入内存并作为 linux 启动过程的一部分被使用）创建。</p>
-<p>在 initrd 上下文中运行的唯一服务是 作为init 守护进程的 <a href="#agent">Agent</a>。用户希望运行的实际工作负载（workload）是使用 libcontainer 创建的，创建容器的方式与 runc 相同。</p>
-<h2 id="4-agent">4. Agent<a class="headerlink" href="#4-agent" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/kata-containers/agent"><code>kata-agent</code></a> 是运行在 guest 中的管理进程，它管理容器和在容器中运行的进程。</p>
-<p><code>kata-agent</code> 的执行单元是 <code>sandbox</code>。 <code>kata-agent</code> 沙箱是由一组名称空间(NS、 UTS、 IPC 和 PID)定义的容器沙箱。<code>kata-runtime</code> 可以在每个 VM 中运行多个容器，以支持需要在一个 pod 中运行多个容器的容器引擎。<strong>使用 docker 的时候，一个 pod 中只会创建一个 容器。</strong></p>
-<p><code>kata-agent</code> 通过 gRPC 与其它的 kata 组件通信。</p>
-<p><code>kata-agent</code> 使用  <a href="https://github.com/opencontainers/runc/tree/master/libcontainer"><code>libcontainer</code></a>（Libcontainer 用于创建具有名称空间、 cgroups、功能和文件系统访问控制的容器。它允许您管理容器的生命周期，在创建容器之后执行其他操作。） 管理容器的生命周期。这样， <code>kata-agent</code>  就可以重用  <a href="https://github.com/opencontainers/runc"><code>runc</code></a> 使用的大部分代码。</p>
-<h2 id="5-runtime">5. Runtime<a class="headerlink" href="#5-runtime" title="Permanent link">&para;</a></h2>
-<p><code>kata-runtime</code> 是一个兼容 OCI 的容器运行时，负责处理所有 <a href="https://github.com/opencontainers/runtime-spec">the OCI runtime specification</a> 指定的命令及启动 <code>kata-shim</code> 实例。</p>
-<p><code>kata-runtime</code> 大量利用了 <a href="https://github.com/containers/virtcontainers">virtcontainers</a> 项目，该项目提供了一个通用的、与运行时规范无关的、硬件虚拟化的容器库。</p>
-<h3 id="51-configuration">5.1 Configuration<a class="headerlink" href="#51-configuration" title="Permanent link">&para;</a></h3>
-<p>运行时使用<code>TOML</code>格式的配置文件（ <code>configuration.toml</code>），位于<code>/usr/share/defaults/kata-containers</code>目录下，该目录还包含了其它设置。</p>
-<h3 id="52-coi">5.2 重要的 COI 命令<a class="headerlink" href="#52-coi" title="Permanent link">&para;</a></h3>
-<p>本节描述了<code>kata-runtime</code> 如何处理大部分重要的 OCI 命令。</p>
-<p>参见：https://github.com/kata-containers/documentation/blob/master/design/architecture.md#significant-oci-commands</p>
-<h2 id="6-proxy">6. Proxy<a class="headerlink" href="#6-proxy" title="Permanent link">&para;</a></h2>
-<p>与 虚拟机 通信使用的是 <code>virtio-serial</code> ，如果主机内核比 v4.8 新，可以使用<code>vsock</code>（virtual socket）。默认使用前者。</p>
-<p>一个虚拟机里面很可能会运行多个容器进程。在使用 <code>virtio-serial</code> 的情况下，与每个进程关联的 I/O 流需要在主机上被多路复用和解多路复用。使用<code>vsock</code>的情况下，该组件可选。</p>
-<p><code>kata-proxy</code> 是一个进程，可为与 VM 关联的多个 kata-shim 和 kata-runtime 客户端提供对 VM kata-agent 的访问。它的主要作用是在<code>kata-shim</code>和 <code>kata-agent</code> 直接转发 I/O 流及信号。 <code>kata-proxy</code> 通过<code>kata-runtime</code>在生成<code>kata-proxy</code>时提供的Unix域套接字连接到<code>kata-agent</code>。</p>
-<h2 id="7-shim">7. Shim<a class="headerlink" href="#7-shim" title="Permanent link">&para;</a></h2>
-<p>shim 是一个容器进程回收器（reaper），例如 Docker 的 <code>containerd-shim</code> or CRI-O 的 <code>conmon</code>，它的设计是基于这样一个假设：它可以监视和回收实际的容器进程。因为 reaper 运行在主机上，所以它不能直接监视一个运行在虚拟机上的进程。对于 Kata Containers ，<code>kata-shim</code> 充当了 reaper 可以监视的容器进程。于是<code>kata-shim</code>需要处理所有的容器 I/O 流（stdin、stdout、stderr）并且转发所有的 reaper 绝对发送到容器进程的信号。</p>
-<p><code>kata-shim</code> 的主要作用：</p>
-<ul>
-<li>通过一个 Unix 域 socket 连接到<code>kata-proxy</code>。在<code>kata-runtime</code> 产生<code>kata-shim</code> 的时候根据 <code>containerID</code> 和 <code>execID</code> 从前者传递给后者。这两个 ID 被用于确认真正地容器进程。</li>
-<li>使用 gRPC <code>WriteStdin</code> gRPC API 把 stdin 流从 reaper 转发到  <code>kata-proxy</code> 。</li>
-<li>从容器进程读取 stdout、stderr。</li>
-<li>使用 <code>SignalProcessRequest</code> API 从 reaper 转发信号到 <code>kata-proxy</code> 。</li>
-<li>监视 terminal 的改变并使用 gRPC <code>TtyWinResize</code> API 将它们转发到 <code>kata-proxy</code> 。</li>
-</ul>
-<h2 id="8-networking">8. Networking<a class="headerlink" href="#8-networking" title="Permanent link">&para;</a></h2>
-<p>容器通常位于它们自己的(可能是共享的)网络命名空间中。在容器生命周期的某个时刻，容器引擎将设置该命名空间，以将容器添加到与主机网络隔离但又在容器之间共享的网络中。</p>
-<p>为此，容器引擎通常会将虚拟以太网（<a href="https://segmentfault.com/a/1190000009251098?utm_source=tag-newest">veth</a>）对的一端添加到容器网络名称空间中。把另一端添加到主机网络命名空间。</p>
-<p>这是一种非常依赖命名空间的方法。但是很多 hypervisor 都不能处理 <code>veth</code> 接口；所以通常为 VM 连接创建 <code>TAP</code> 接口。</p>
-<p>为了克服经典容器引擎与虚拟机之间的不兼容问题，<code>kata-runtime</code> 网络使用 <code>MACVTAP</code>透明地将 <code>veth</code> 接口和 <code>TAP</code> 接口连接起来。</p>
-<p><img alt="" src="../img/network.png" /></p>
-<p>Kata Containers 同时支持  <a href="https://github.com/docker/libnetwork/blob/master/docs/design.md#the-container-network-model">CNM</a> 和 <a href="https://github.com/containernetworking/cni">CNI</a> 进行网络管理。</p>
-<h3 id="81-cnm-runtime">8.1 使用 CNM 设置 runtime 网络<a class="headerlink" href="#81-cnm-runtime" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../img/CNM_detailed_diagram.png" /></p>
-<ol>
-<li>读取 <code>config.json</code></li>
-<li>创建 network namespace（通过 <code>ip netns</code> 添加的 ns 在 <strong>/var/run/netns/</strong> 下面）</li>
-<li>调用 <code>prestart</code> hook (从 netns 内部)</li>
-<li>扫描 netns 内部的网络接口，并获取由 prestart 钩子创建的接口的名称</li>
-<li>创建 bridge, TAP, 然后把它们全都与先前创建的网络接口连接起来</li>
-</ol>
-<h2 id="9-storage">9. Storage<a class="headerlink" href="#9-storage" title="Permanent link">&para;</a></h2>
-<p>容器的工作负载（workload）通过 <a href="https://www.kernel.org/doc/Documentation/filesystems/9p.txt">9pfs</a> 与虚拟化环境共享。设备映射器存储驱动程序是一种特殊情况。 驱动程序使用专用的块设备而不是格式化的文件系统，并且在块级别而不是文件级别运行。此技术用于直接使用底层块设备，而不是容器 root file system 的 overlay file system。块设备映射到 overlay 的顶部读写层。与使用 9pfs 共享容器文件系统相比，这种方法提供了更好的 I/O 性能。</p>
-<p>上述的方法在复制文件方面会有限制。当使用 <code>docker cp</code> 时不能将文件从主机复制到容器，这会导致问题。</p>
-<div class="codehilite"><pre><span></span><code><span class="n">docker</span><span class="w"> </span><span class="n">cp</span><span class="w"> </span><span class="o">[</span><span class="n">OPTIONS</span><span class="o">]</span><span class="w"> </span><span class="nl">CONTAINER</span><span class="p">:</span><span class="n">SRC_PATH</span><span class="w"> </span><span class="k">HOST</span><span class="err">:</span><span class="n">DEST_PATH</span><span class="w"></span>
-<span class="n">docker</span><span class="w"> </span><span class="n">cp</span><span class="w"> </span><span class="o">[</span><span class="n">OPTIONS</span><span class="o">]</span><span class="w"> </span><span class="k">HOST</span><span class="err">:</span><span class="n">SRC_PATH</span><span class="w"> </span><span class="nl">CONTAINER</span><span class="p">:</span><span class="n">DEST_PATH</span><span class="w"></span>
-</code></pre></div>
-
-
-<p>Kata Containers 支持块存储设备的热插拔。</p>
-<p>用户可以在容器内部使用<code>mount(8)</code>查看是否使用了 设备映射器块设备 作为它的 rootfs。如果使用了块设备，那么<code>/</code>会被挂载到<code>/dev/vda</code>。</p>
-<p>可以设置配置文件<code>/usr/share/defaults/kata-containers/configuration.toml</code>中的<code>disable_block_device_use</code>字段关掉块设备直接挂载功能，转而使用 9pfs。</p>
-<h2 id="10-kubernetes">10. Kubernetes 支持<a class="headerlink" href="#10-kubernetes" title="Permanent link">&para;</a></h2>
-<p>Kata Containers 是一个被 CRI-O and Containerd CRI Plugin 官方支持的 runtime 。但是，由于 Kubernetes 的执行单元是 pod ，一个 pod 里面可能会运行多个容器，所以  Kata Containers runtime 需要获取一些额外的信息来无缝整合 Kubernetes 。</p>
-<h3 id="101">10.1 问题描述<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
-<p>如果没有来自 CRI 运行时的额外元数据，Kata Containers 运行时将为每个 pod 和 pod 中的每个容器创建一个虚拟机。然而，考虑到这些虚拟机的资源（如网络或 PID）需要共享，这项任务非常复杂。</p>
-<p>对于 Kubernetes 使用 Kata Containers 作为 runtime 的情况来说，挑战就变成了：1. 何时为 pod 创建一个完整的虚拟机；2. 何时在前一步创建好的虚拟机中创建一个容器。在这两种情况下，都将使用非常相似的参数来调用它，因此它需要 Kubernetes CRI 运行时的帮助才能区分 pod 创建请求和容器创建请求。</p>
                 
                   
                 
@@ -4695,7 +4360,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../k8s-containerd-kata-containers%20%E5%AE%89%E8%A3%85/" title="K8s containerd kata containers 安装" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../kata-containers/VSOCKs/" title="VSOCKs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -4704,7 +4369,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                K8s containerd kata containers 安装
+                VSOCKs
               </span>
             </div>
           </a>
