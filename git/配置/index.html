@@ -2061,8 +2061,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../rpm/00%20%E7%A4%BA%E4%BE%8B/" class="md-nav__link">
-        00 示例
+      <a href="../../rpm/00%20%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        00 简介
       </a>
     </li>
   
@@ -4191,6 +4191,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../little%20toys/%E6%8A%BD%E5%A5%96%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        抽奖系统的数据库设计
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../little%20toys/%E6%8B%99%E4%BD%9C/" class="md-nav__link">
+        拙作
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -5013,6 +5037,22 @@
   
 
     
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" class="md-nav__link">
+        简历
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -5114,6 +5154,11 @@
 <div class="highlight"><pre><span></span><code>git config --global credential.http://mine.gitlab.com:8099.helper &quot;store --file ~/.gitlab.pass&quot;
 </code></pre></div>
 <p><strong>注意</strong>：<code>http://mine.gitlab.com:8099</code>是和远程仓库的<strong>URL前缀</strong>相匹配的，只有远程仓库地址所匹配的 git 仓库才会使用此认证文件，比如：<code>http://mine.gitlab.com:8099/test/test.git</code>就会匹配此认证信息。</p>
+<p>其它细节：</p>
+<ul>
+<li>多个 credential.xxx.helper 可以使用同一个认证文件</li>
+<li>可以直接执行配置 git 的认证处理指令，这样只需要输入一次正确的用户名和密码，而无需担心认证文件内容写错</li>
+</ul>
 <p>取消配置命令：</p>
 <div class="highlight"><pre><span></span><code>git config --global --unset credential.http://mine.gitlab.com:8099.helper
 </code></pre></div>
